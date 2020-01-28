@@ -1,0 +1,37 @@
+#this is comment
+
+name: Nik
+
+names: #comment
+  - Nik
+  - Test
+  - Some
+
+pound_sign: "#"
+
+book:
+  author: Test Author
+   publisher: random house
+
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #No, false, FALSE
+
+string_val: "This is text string"
+
+include_lines: |
+  asdasd
+  qewqeqw
+  123aqwes
+
+ignore_new_lines: >
+  this is
+  just one long
+  line
+
+
