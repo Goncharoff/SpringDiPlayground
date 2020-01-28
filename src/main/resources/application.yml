@@ -3,3 +3,10 @@
      username: JMS username
      password: somepass
      url: SomeUrl
+
+---
+spring:
+  profiles: jp
+  goncharoff:
+    jms:
+      username: JMS $$$ in $$$ JP
