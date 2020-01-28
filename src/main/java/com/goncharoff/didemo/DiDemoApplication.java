@@ -5,6 +5,7 @@ import com.goncharoff.didemo.controllers.MyController;
 import com.goncharoff.didemo.controllers.PropertyInjectedController;
 import com.goncharoff.didemo.controllers.SetterInjectedController;
 import com.goncharoff.didemo.examplebeans.FakeDataSource;
+import com.goncharoff.didemo.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -23,8 +24,10 @@ public class DiDemoApplication {
 //        System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello(   ));
 
         FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
+        FakeJmsBroker fakeJmsBroker = ctx.getBean(FakeJmsBroker.class);
 
         System.out.println(fakeDataSource.getUser());
+        System.out.println(fakeJmsBroker.getUsername());
     }
 
 }
